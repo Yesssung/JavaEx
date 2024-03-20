@@ -1,4 +1,4 @@
-package com.javaex.basic.console;
+ package com.javaex.basic.console;
 
 import java.util.Scanner;
 
