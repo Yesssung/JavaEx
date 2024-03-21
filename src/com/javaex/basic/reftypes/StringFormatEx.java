@@ -1,4 +1,4 @@
-package com.javaex.basic.reftype;
+package com.javaex.basic.reftypes;
 
 public class StringFormatEx {
 
@@ -27,7 +27,7 @@ public class StringFormatEx {
 		
 		// 포맷 형식은 String형의 .format 메서드에서 구현된다
 		String fmt = "%d 개의 %s 중에서 %d 개를 먹었다.%n"; // 미리 틀을 만들어 놓고 값만 바꿔줄 수 있다.
-		System.out.println(fmt.formatted(10, "바나나", 2)); // println, printf 둘다 값 출력 가능(?)
+		System.out.println(fmt.formatted(10, "바나나", 2)); // println, printf 둘다 값 출력 가능
 		
 		
 		

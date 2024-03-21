@@ -1,4 +1,4 @@
-package com.javaex.basic.reftype;
+package com.javaex.basic.reftypes;
 
 public class StringEx {
 
