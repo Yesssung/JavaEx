@@ -12,22 +12,22 @@ public class MathRandomEx {
 		
 		
 		// for문
-//		for(int i = 1; i <=6; i++ ) {
-//			System.out.print((int)(Math.random()*45)+1 + " ");
-//		}
+		for(int i = 1; i <=6; i++ ) {
+			System.out.print((int)(Math.random()*45)+1 + " ");
+		}
 
 		
 		
 		
 		// while
-		int i = 0;
-		
-		while( i < 6) {
-			System.out.print((int)(Math.random()*45)+1 + " ");
-			i +=1 ;
-		}
-		
-		
+//		int i = 0;
+//		
+//		while( i < 6) {
+//			System.out.print((int)(Math.random()*45)+1 + " ");
+//			i +=1 ;
+//		}
+//		
+//		
 		
 		
 		

@@ -4,7 +4,7 @@ public class MethodEx {
 	
 	public static void main(String[] args) {
 		// 매개변수 x, return x
-//		printMessage();
+		printMessage();
 		
 		// 매개변수 x, return o
 //		String message = getMessage();
