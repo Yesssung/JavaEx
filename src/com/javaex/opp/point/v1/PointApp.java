@@ -17,8 +17,7 @@ public class PointApp {
 	
 		point.draw();
 	
-		
-
+	
 	}
 
 }
