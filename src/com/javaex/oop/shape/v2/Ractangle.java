@@ -1,11 +1,11 @@
 package com.javaex.oop.shape.v2;
 
-public class Rectangle extends Shape implements Drawable{
+public class Ractangle extends Shape implements Drawable{
 	
 	private int width;
 	private int height;
 	
-	public Rectangle(int x, int y, int width, int height) {
+	public Ractangle(int x, int y, int width, int height) {
 		super(x,y);
 		this.width = width;
 		this.height = height;
