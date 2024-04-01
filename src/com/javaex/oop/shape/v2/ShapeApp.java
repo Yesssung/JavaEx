@@ -9,7 +9,7 @@ public class ShapeApp {
 		Circle c = new Circle(10, 20, 30);
 		c.draw();
 		
-		Ractangle r = new Ractangle(10, 20, 100, 500);
+		Rectangle r = new Rectangle(10, 20, 100, 500);
 		r.draw();
 		
 		Point p = new Point(100, 200);

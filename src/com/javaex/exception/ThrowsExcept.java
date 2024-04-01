@@ -24,7 +24,7 @@ class CustomArithException extends ArithmeticException {
 
 public class ThrowsExcept {
 
-	public void executeExcept() throws IOException { // -> 이 부분에
+	public void executeExcept() throws IOException { // -> 이 부분에 예외를 던질 것을 말함
 		System.out.println("강제 예외 발생!");
 		// 외부로 예외 던지기(Throw)
 		throw new IOException("강제 예외!");
