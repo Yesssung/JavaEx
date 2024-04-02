@@ -25,9 +25,9 @@ public class StringBufferEx {
 		
 		// 메소드 체이닝 : 메소드를 연속적으로 호출하면서, 객체를 변화시키는 방법 ->  위에처럼 다 따로해서 출력안해도 한꺼번에 가능
 		StringBuffer sb2 = new StringBuffer("this")
-								.append(" is pencil")
-								.insert(7, " my")
-								.replace(7, 10, " your");
+								.append(" is pencil")		// 추가
+								.insert(7, " my")			// 삽입
+								.replace(7, 10, " your");	// 대체
 		System.out.println(sb2);
 		
 	}

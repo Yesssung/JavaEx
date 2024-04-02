@@ -6,7 +6,7 @@ public class StringEx {
 
 	public static void main(String[] args) {
 		// 문자열 기본
-//		stringBasic();
+		stringBasic();
 		// 문자열 다양한 메소드
 		usefulMethods();
 	}
@@ -17,8 +17,8 @@ public class StringEx {
 		String s3 = "JAVA"; 			// 리터럴
 		
 		// 리터럴과 new 객체 생성이 다르게 작용
-		System.out.println(s1 == s2); // 주소비교 : Literal vs new
-		System.out.println(s1 == s3); //	    : Literal vs Literal -> Literal의 경우, 데이터가 같으면 같은 객체로 취급
+		System.out.println(s1 == s2); // 출력: false	주소비교 : Literal vs new객체
+		System.out.println(s1 == s3); // 출력: true		   : Literal vs Literal -> Literal의 경우, 데이터가 같으면 같은 객체로 취급
 		
 		// 배열을 이용한 String 생성자
 		char[] letters = {'J', 'A', 'V', 'A'};
