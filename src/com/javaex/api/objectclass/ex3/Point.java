@@ -32,10 +32,10 @@ public class Point implements Cloneable {
 
 
 	@Override
-	public boolean equals(Object obj) {
-		if(obj instanceof Point) {
+	public boolean equals(Object obj) { // 비교대상 객체(obj)를 Object로 넘겨받기
+		if(obj instanceof Point) {	    // 넘겨받은 obj가 Point라면
 
-			Point other = (Point)obj;
+			Point other = (Point)obj;   // Point로 다운 캐스팅 해주세오
 			return x == other.x && y == other.y;
 		}
 		return super.equals(obj);

@@ -4,8 +4,9 @@ import java.util.Arrays;
 
 
 // Clone 메서드 이용을 위해 Cloneable 인터페이스 구현하기
-// 깊은 복제 : 참조필드의 경우 새 객체를 만들어서 참조필드 값을 변경 -> Override가 해결방법
-public class ScoreBoard implements Cloneable {
+// 깊은 복제 : 참조 자료를 필드로 가지고 있는 클래스는 깊은 복제 필요 (주소만 복사되면 안되니깐) 
+// 참조필드의 경우 새 객체를 만들어서 참조필드 값을 변경 -> Override가 해결방법
+public class ScoreBoard implements Cloneable { // Cloneable 이라는 인터페이스를 implements 해야 Clone을 만들 수 있다.
 	
 	private int scores[];
 	
