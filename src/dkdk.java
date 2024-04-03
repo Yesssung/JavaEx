@@ -1,17 +1,20 @@
+import java.util.Scanner;
 
 public class dkdk {
 
 	public static void main(String[] args) {
-
-		String s1 = "hello";
-		String s2 = "hello";
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("번호를 입력하세요: \n 단: ");
+	
+		int num = scanner.nextInt();
 		
-		String s3 = new String("hello");
-		String s4 = new String("hello");;
-		
-		System.out.println(s1 == s2);
-		System.out.println(s3 == s4);
-		System.out.println(s2 == s4);
+		for(int i = 1; i <= 9; i++) {
+			System.out.println( num + "*" + i + "=" + (i*num) );
+			
+		}
+		System.out.println();
+		scanner.close();
 	}
+
 
 }
