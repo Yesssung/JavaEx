@@ -1,4 +1,4 @@
-package com.javaex;
+
 
 /* HELLO JAVA 출력 프로그램
  * 여러줄 주석

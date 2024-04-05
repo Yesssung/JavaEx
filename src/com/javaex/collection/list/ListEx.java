@@ -1,5 +1,6 @@
 package com.javaex.collection.list;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -13,6 +14,7 @@ public class ListEx {
 		// List는 객체가 아니라 인터페이스에요
 		// 특징 : 순서 o, 중복 o
 		List<String> lst = new LinkedList<>();
+//		List<String> lst = new ArrayList<>(); // ArrayList가 필요하면 그냥 이렇게 추가하면 끗(import는 해주세오)
 		
 		// 객체 추가 : .add -> 맨 마지막에 노드 추가됨요
 		lst.add("JAVA");
@@ -42,7 +44,15 @@ public class ListEx {
 		lst.remove("Python");
 		System.out.println("lst = " + lst);
 		
-		// List 순회
+		// Set자료형 List순회시 Iterator 객체 사용한다
+		System.out.println("======================Iterator");
+		Iterator<String> it = lst.iterator();	// 반복자 추출
+		while(it.hasNext()) {	// 뒤에 요소가 더 있나효?
+			String item = it.next();	// 요소 추출 후 다음으로 이동
+			System.out.print(item + " ");
+		}
+		System.out.println();
+		
 		
 		// 비우기
 		lst.clear();
