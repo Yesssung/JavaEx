@@ -66,10 +66,10 @@ public class HashSetEx {
 //		usingHashSet();
 		
 		// 2. 집합 연산
-//		setOperation();
+		setOperation();
 		
 		// 3. HashSet 사용법(객체 자료형)
-		usingHashSetWithCustom();
+//		usingHashSetWithCustom();
 	}
 	
 	private static void usingHashSet() {
