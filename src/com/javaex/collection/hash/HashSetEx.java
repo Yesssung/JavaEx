@@ -38,7 +38,10 @@ class Student{
 		public int hashCode() {
 			return id;
 		}
+		
+		
 		// 값의 동일성 판별을 위한 equals 메서드 오버라이드
+		// 동일성 판별 로직
 		@Override
 		public boolean equals(Object obj) {
 			if(obj instanceof Student) {
@@ -66,7 +69,7 @@ public class HashSetEx {
 //		usingHashSet();
 		
 		// 2. 집합 연산
-		setOperation();
+		setOperation(); // 출력 순서 없다고 했는데 왜 계속 같은 순서로 출력되나? 버전이 다르면 순서가 다르게 될 수도 있다. 대부분은 비슷한 순서로 출력될것
 		
 		// 3. HashSet 사용법(객체 자료형)
 //		usingHashSetWithCustom();

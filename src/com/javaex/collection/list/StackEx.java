@@ -25,7 +25,7 @@ public class StackEx {
 		
 		// Stack이 비어있는지 확인해야 한다.
 		
-		while(true) {
+		while(true) { // 확인작업
 			System.out.println("POP: " + stack.pop());
 			System.out.println("STACK: " + stack);
 		}
