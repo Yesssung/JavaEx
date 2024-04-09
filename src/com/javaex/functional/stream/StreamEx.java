@@ -79,7 +79,8 @@ public class StreamEx {
 //		testFilter(scores, students); // filter
 //		testMap(scores); 			  // map
 //		testCountSum(scores); 		  // count, sum
-		testFilterSort(students);	  // 
+//		testFilterSort(students);	  // filter, sorted
+		testReduce(scores);			  // 
 	}
 	
 	private static void testForEach(int[] source, List<Student> lst) {
@@ -165,7 +166,22 @@ public class StreamEx {
 
 	}
 	
-	
+	private static void testReduce(int[] arr) {
+		System.out.println("원본 : " + Arrays.toString(arr));
+		System.out.println("============================Stream Reduce");
+		
+		int total = Arrays.stream(arr)
+					.reduce(0, // 누산기 초기값
+							(acc, curr) -> { // acc : 누산기, curr : 현재 요소
+							System.out.println("acc : " + acc);
+							System.out.println("curr : " + curr);
+							return acc + curr;
+								
+							});
+							
+							
+		
+	}
 		
 	
 
