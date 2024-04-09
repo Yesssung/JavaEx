@@ -49,11 +49,8 @@ class ClassRoom{
 public class HashTableEx {
 
 	public static void main(String[] args) {
-		// Map형 자료형
-		// KeySet 과 List의 복합 자료형
-		// Key(KeySet)은 순서가 없고, 중복 불가.
-		// Value는 Key를 통한 접근만 가능, 중복 허용
-		// Key Value Pair
+		// Map형 자료형 // KeySet 과 List의 복합 자료형
+		// Key(KeySet)은 순서가 없고, 중복 불가. // Value는 Key를 통한 접근만 가능, 중복 허용
 		
 		// HashTable 선언
 		Map<String, ClassRoom> map = new Hashtable<>();
@@ -83,7 +80,7 @@ public class HashTableEx {
 		System.out.println(map.containsValue("JAVA"));
 		System.out.println(map.containsValue(new ClassRoom("JAVA")));
 		
-		// Iterator
+		// 순회 : Iterator -> List, HashMap, HashSet 등에서 사용가능
 		System.out.println("===========Iterator");
 		Iterator<String> it = map.keySet().iterator();
 		
