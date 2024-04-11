@@ -171,12 +171,11 @@ public class StreamEx {
 		System.out.println("============================Stream Reduce");
 		
 		int total = Arrays.stream(arr)
-					.reduce(0, // 누산기 초기값
+					.reduce(0, // 누산기 초기값 -> 누i산기는 더해주는 계산기가 아니라 누적되는 것
 							(acc, curr) -> { // acc : 누산기, curr : 현재 요소
 							System.out.println("acc : " + acc);
 							System.out.println("curr : " + curr);
 							return acc + curr;
-								
 							});
 							
 							
