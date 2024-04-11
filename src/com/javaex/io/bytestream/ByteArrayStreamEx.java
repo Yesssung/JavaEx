@@ -17,6 +17,11 @@ public class ByteArrayStreamEx {
 		
 		System.out.println("입력소스 : " + Arrays.toString(inSrc));
 		
+		// 1. 전통적 방식의 입출력 스트림 예외 처리
+		// 2. AutoCloseable -> 자동 자원 해제
+		
+		
+		/* 1. 전통
 		InputStream bis = null;
 		OutputStream bos = null;
 		
@@ -49,7 +54,30 @@ public class ByteArrayStreamEx {
 				
 			}
 		}
-
+*/
+		
+		
+		// 2. AutoCloseable을 활용한 입출력 스트림 예외처리 : try - with - resources
+		try( /*자원 해제를 필요로하는 객체를 초기화*/
+				InputStream bis = new ByteArrayInputStream(inSrc);
+				OutputStream bos = new ByteArrayOutputStream();
+				) {
+			int data = 0; //입력 스트림으로부터 입력된 데이터 저장할 변수
+			
+			while((data = bis.read()) != -1) {
+				System.out.println("Read data: " + data);
+				bos.write(data);
+			}
+			
+			outSrc = ((ByteArrayOutputStream)bos).toByteArray();
+			System.out.println("최종출력: " + Arrays.toString(outSrc));
+		} catch(IOException e) {
+			e.printStackTrace();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+				
+		
 	}
 
 }
