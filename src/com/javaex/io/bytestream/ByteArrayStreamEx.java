@@ -57,7 +57,7 @@ public class ByteArrayStreamEx {
 */
 		
 		
-		// 2. AutoCloseable을 활용한 입출력 스트림 예외처리 : try - with - resources
+		// 2. AutoCloseable을 활용한 입출력 스트림 예외처리 : try - with - resources // 장점: 안전성
 		try( /*자원 해제를 필요로하는 객체를 초기화*/
 				InputStream bis = new ByteArrayInputStream(inSrc);
 				OutputStream bos = new ByteArrayOutputStream();
