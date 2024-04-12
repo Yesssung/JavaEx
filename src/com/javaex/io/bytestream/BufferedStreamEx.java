@@ -37,6 +37,7 @@ public class BufferedStreamEx {
 		} catch (FileNotFoundException e) {
 			System.err.println("파일을 찾을 수 없습니다.");
 		} catch (IOException e) {
+			
 			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
