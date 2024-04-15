@@ -4,7 +4,7 @@ public class Animal {
 	// 필드
 	protected String name;
 	// 생성자
-	public Animal() {
+	public Animal() { // 디폴트 생성자
 		
 	}
 	public Animal(String name) {
