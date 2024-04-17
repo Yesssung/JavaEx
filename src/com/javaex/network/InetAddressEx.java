@@ -29,7 +29,7 @@ public class InetAddressEx {
 
 	
 	private static void printLocalIP() {
-		// Local loop back: 127.0.0.1
+		// Local loop back: 127.0.0.1(로컬 호스트)
 		// PC : IP 
 		try {
 		InetAddress local = InetAddress.getLocalHost();
