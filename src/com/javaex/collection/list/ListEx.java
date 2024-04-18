@@ -38,13 +38,13 @@ public class ListEx {
 //		System.out.println("Capacity : " + lst.capacity()); // -> 야는 확인 안되유
 		
 		// 삭제 : 인덱스 삭제
-		lst.remove(2);
+		lst.remove(2); // 2번 인덱스 삭제
 		
 		// 삭제 : 객체 삭제
 		lst.remove("Python");
 		System.out.println("lst = " + lst);
 		
-		// Set자료형 List순회시 Iterator 객체 사용한다
+		// Set자료형 List순회시(반복시) Iterator 객체 사용한다
 		System.out.println("======================Iterator");
 		Iterator<String> it = lst.iterator();	// 반복자 추출
 		while(it.hasNext()) {	// 뒤에 요소가 더 있나효?
