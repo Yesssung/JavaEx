@@ -20,13 +20,12 @@ public class SelectTest {
 		
 		Connection conn = null;
 		Statement stmt = null;
-		ResultSet rs = null;
+		ResultSet rs = null; // 데이터베이스에서 전달받은 결과를 객체로 받기
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			conn = DriverManager.getConnection(dbur1, dbuser, dbpass);
 			stmt = conn.createStatement();
-			rs = null;
 		
 			String sql = "SELECT department_id, department_name FROM departments";
 			
