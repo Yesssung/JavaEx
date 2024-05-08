@@ -14,20 +14,18 @@ public class HRDaoApp {
 
 	public static void main(String[] args) {
 		listEmployees();
-		System.out.println();
+//		System.out.println();
 		
 		getEmployeesInfo();
 		System.out.println();
 		
-		listEmployees();
+//		listEmployees();
 	}
 
 	private static void getEmployeesInfo() {
-		
-		System.out.print("이름 : ");
 		Scanner sc = new Scanner(System.in);
 		
-		
+		System.out.print("이름 : ");
 		String empName = sc.nextLine();
 		
 		EmpDAO dao = new EmpDAOImplOracle();

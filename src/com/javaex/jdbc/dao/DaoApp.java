@@ -12,8 +12,8 @@ public class DaoApp {
 		
 //		insertAuthor();
 //		updateAuthor();
-//		getAuthor();
-		deleteAuthor();
+		getAuthor();
+//		deleteAuthor();
 		System.out.println();
 		
 		listAuthors();

@@ -43,6 +43,7 @@ public class EmpDAOImplOracle implements EmpDAO{
 			
 			String sql = "SELECT employee_id, first_name||' '||last_name, email, phone_number, hire_date, salary FROM employees";
 			rs = stmt.executeQuery(sql);
+			
 			while(rs.next()) {
 				Long empId = rs.getLong(1);
 				String empName = rs.getString(2);
@@ -77,16 +78,13 @@ public class EmpDAOImplOracle implements EmpDAO{
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		EmployeeVO vo = null;
-		
-		Scanner sc = new Scanner(System.in);
-		
+
 		try {
 			conn = getConnection();
-			
-			String key = sc.nextLine();
+
 			// 실행계획 수립
 			String sql = "SELECT employee_id, first_name||' '||last_name, email, phone_number, hire_date, salary FROM employees "
-					+ "WHERE LOWER(first_name) LIKE'%" + key.toLowerCase() + "%' OR LOWER(last_name) LIKE '%" + key.toLowerCase() + "%'";
+					+ "WHERE LOWER(first_name) LIKE ? OR LOWER(last_name) LIKE ?";
 			pstmt = conn.prepareStatement(sql);
 			
 			pstmt.setString(1, name);
