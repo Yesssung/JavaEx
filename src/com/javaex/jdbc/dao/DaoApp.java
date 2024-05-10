@@ -12,8 +12,8 @@ public class DaoApp {
 		
 //		insertAuthor();
 //		updateAuthor();
-		getAuthor();
-//		deleteAuthor();
+//		getAuthor();
+		deleteAuthor();
 		System.out.println();
 		
 		listAuthors();
@@ -29,6 +29,8 @@ public class DaoApp {
 		boolean sucess = dao.delete(authorId);
 		
 		System.out.println("Author DELETE " + (sucess ? "성공" : "실패"));
+		
+		sc.close();
 	}
 	
 	private static void getAuthor() {

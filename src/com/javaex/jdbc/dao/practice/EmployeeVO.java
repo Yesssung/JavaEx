@@ -23,9 +23,9 @@ public class EmployeeVO {
 		this.empSalary = empSalary;
 	}
 
-	public EmployeeVO(String empName, String empEmail, String empPh, String empDate, Long empSalary) {
+	public EmployeeVO(Long empId, String empEmail, String empPh, String empDate, Long empSalary) {
 		super();
-		this.empName = empName;
+		this.empId = empId;
 		this.empEmail = empEmail;
 		this.empPh = empPh;
 		this.empDate = empDate;
